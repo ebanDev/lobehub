@@ -90,7 +90,11 @@ const TaskProperties = memo(() => {
   const handlePriorityChange = useCallback(
     async (next: number) => {
       if (!taskId || next === priority) return;
-      await updateTask(taskId, { priority: next });
+      try {
+        await updateTask(taskId, { priority: next });
+      } catch (e) {
+        console.error('[TaskProperties] Failed to save priority:', e);
+      }
     },
     [taskId, priority, updateTask],
   );

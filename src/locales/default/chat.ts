@@ -462,6 +462,7 @@ export default {
   'taskDetail.status.running': '运行中',
   'taskDetail.subtasks': '子任务',
   'taskDetail.titlePlaceholder': '输入任务名称...',
+  'taskDetail.updateFailed': 'Failed to save',
   'taskList.activeTasks': 'Active Tasks',
   'taskList.breadcrumb.task': 'Task',
   'taskList.title': 'Tasks',

@@ -37,7 +37,10 @@ const TaskDetailHeader = memo(() => {
 
   const { run: debouncedSave } = useDebounceFn(
     (value: string) => {
-      if (taskId) updateTask(taskId, { name: value });
+      if (!taskId) return;
+      updateTask(taskId, { name: value }).catch((e) => {
+        console.error('[TaskDetailHeader] Failed to save name:', e);
+      });
     },
     { wait: DEBOUNCE_MS },
   );

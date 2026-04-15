@@ -410,6 +410,7 @@
   "taskDetail.subIssueOf": "隶属于",
   "taskDetail.subtasks": "子任务",
   "taskDetail.titlePlaceholder": "输入任务名称...",
+  "taskDetail.updateFailed": "保存失败",
   "taskList.activeTasks": "进行中的任务",
   "taskList.breadcrumb.task": "任务",
   "taskList.title": "任务",
